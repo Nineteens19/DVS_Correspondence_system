@@ -44,4 +44,10 @@
 **AI Response**: "Ran local backend API server on port 5005 with in-memory SQLite and mock UAT seed data, executed Playwright automation suite (capture_screens.cjs) to capture 17 live Retina (2x) UI screenshots into docs/images/correspondence/. Verified that all 36 images (19 EDR Memo + 17 Correspondence) are fully embedded and rendered in P2026-DVS_Correspondence_System_Consolidated_SRS_Analysis.md."
 **Context**: Inception Phase - Live System Demonstration & Visual Documentation Complete
 
+## Decoupled Roles & Permissions (Section 3 Revision)
+**Timestamp**: 2026-09-05T21:12:00+07:00
+**User Input**: "3. บทบาทผู้ใช้และสิทธิ์การใช้งาน (Roles & Permissions) ให้แยกกันชัดเจน จะทำให้เกิดความสำสน เนื้อหาแต่ละจุดอยู่ในหมวดเดียวกันแต่ให้เขียนแยกกันทั้งหมด รีวิวและแก้ไขใหม่ เหมือนอธิบายคนละระบบไปเลย แบบนี้จะงงมากถ้าเขียนนรวมกัน"
+**AI Response**: "Completely decoupled Section 3 (Roles & Permissions) in P2026-DVS_Correspondence_System_Consolidated_SRS_Analysis.md into two independent, self-contained system specifications. Section 3.1 covers System 1 (EDR Memo: EDR-R01..R03, capabilities, explicit limitations, dedicated permission matrix, and data scope logic). Section 3.2 covers System 2 (Correspondence System: CORR-R01..R07, capabilities, explicit limitations, dedicated permission matrix with zero shared conflation, Top Secret OTP gate, and chain of custody). Section 3.3 provides a 10-dimension analytical comparison table and clarifies identity management via AD/LDAP without permission mixing."
+**Context**: Inception Phase - Roles & Permissions Decoupling & Clarity Enhancement
+
 ---
