@@ -839,110 +839,110 @@ $$\text{Progress \%} = \left( \frac{\sum_{i=1}^{N} \text{Weight}(\text{SubAssign
 
 #### 1. หน้าจอเข้าสู่ระบบ EDR (EDR Login Screen)
 - **ภาพหน้าจอ:**  
-  ![01_login_page.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/01_login_page.png)
-  *(ตัวอย่างตอนกรอกข้อมูล: [01_login_filled.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/01_login_filled.png))*
+  ![01_login_page.png](./docs/images/edr_memo/01_login_page.png)  
+  *(ตัวอย่างตอนกรอกข้อมูล: [01_login_filled.png](./docs/images/edr_memo/01_login_filled.png))*
 - **ฟังก์ชันการทำงาน:** ฟอร์มเข้าสู่ระบบด้วยบัญชี Windows Active Directory / LDAP พร้อมระบบตรวจสอบสิทธิ์และจดจำเซสชัน
 
 #### 2. หน้าจอ Dashboard ระบบ EDR (EDR Dashboard Screen)
 - **ภาพหน้าจอ:**  
-  ![02_dashboard.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/02_dashboard.png)
-  *(มุมมองเต็มจอ: [02_dashboard_full.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/02_dashboard_full.png))*
+  ![02_dashboard.png](./docs/images/edr_memo/02_dashboard.png)  
+  *(มุมมองเต็มจอ: [02_dashboard_full.png](./docs/images/edr_memo/02_dashboard_full.png))*
 - **ฟังก์ชันการทำงาน:** สรุปสถิติคำขอเลขบันทึกภายในของฝ่าย, รายการคำขอล่าสุด, สถานะคำขอ (Created / In Use / Closed) พร้อมทางลัดเข้าสู่หน้าสร้างคำขอ
 
 #### 3. หน้ารายการขอสร้างเลขเอกสารบันทึกภายใน (Internal Request List)
 - **ภาพหน้าจอ:**  
-  ![03_internal_request_list.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/03_internal_request_list.png)
-  *(มุมมองตาราง: [03_internal_request_table.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/03_internal_request_table.png) / [03_internal_request_index.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/03_internal_request_index.png))*
+  ![03_internal_request_list.png](./docs/images/edr_memo/03_internal_request_list.png)  
+  *(มุมมองตาราง: [03_internal_request_table.png](./docs/images/edr_memo/03_internal_request_table.png) / [03_internal_request_index.png](./docs/images/edr_memo/03_internal_request_index.png))*
 - **ฟังก์ชันการทำงาน:** ตารางแสดงรายการเลขบันทึกภายในที่ออกแล้ว กรองตามช่วงวันที่ ประเภทเอกสาร สถานะ และค้นหาตามชื่อเรื่องหรือเลขที่เอกสาร
 
 #### 4. หน้าฟอร์มขอสร้างเลขเอกสารบันทึกภายใน (Create Form & Preview)
 - **ภาพหน้าจอ:**  
-  ![05_internal_request_create_initial.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/05_internal_request_create_initial.png)
-  *(ตัวอย่างฟอร์มเริ่มต้น: [04_internal_request_create.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/04_internal_request_create.png) / [04_create_form_initial.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/04_create_form_initial.png))*
+  ![05_internal_request_create_initial.png](./docs/images/edr_memo/05_internal_request_create_initial.png)  
+  *(ตัวอย่างฟอร์มเริ่มต้น: [04_internal_request_create.png](./docs/images/edr_memo/04_internal_request_create.png) / [04_create_form_initial.png](./docs/images/edr_memo/04_create_form_initial.png))*
 - **ฟังก์ชันการทำงาน:** ฟอร์มบันทึกข้อมูลขอเลข แสดง Real-time Running Number Preview ตามสายงาน/ฝ่าย/ทีมที่เลือก
 
 #### 5. Searchable Dropdown เลือกประเภทเอกสาร (DocType Dropdown)
 - **ภาพหน้าจอ:**  
-  ![05a_doctype_dropdown.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/05a_doctype_dropdown.png)
-  *(ขณะเปิด Dropdown: [04a_doctype_dropdown_opened.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/04a_doctype_dropdown_opened.png))*
+  ![05a_doctype_dropdown.png](./docs/images/edr_memo/05a_doctype_dropdown.png)  
+  *(ขณะเปิด Dropdown: [04a_doctype_dropdown_opened.png](./docs/images/edr_memo/04a_doctype_dropdown_opened.png))*
 - **ฟังก์ชันการทำงาน:** Dropdown ค้นหาประเภทเอกสารได้อย่างรวดเร็ว พร้อมปุ่มลัด "เพิ่มประเภทเอกสารด่วน (Quick Add)"
 
 #### 6. ตัวอย่างการกรอกฟอร์มขอเลขบันทึกภายใน (Create Form Filled)
 - **ภาพหน้าจอ:**  
-  ![05b_create_form_filled.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/05b_create_form_filled.png)
-  *(ภาพตัวอย่างเต็ม: [04c_create_form_filled.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/04c_create_form_filled.png))*
+  ![05b_create_form_filled.png](./docs/images/edr_memo/05b_create_form_filled.png)  
+  *(ภาพตัวอย่างเต็ม: [04c_create_form_filled.png](./docs/images/edr_memo/04c_create_form_filled.png))*
 - **ฟังก์ชันการทำงาน:** แสดงข้อมูลชื่อเรื่อง, ประเภทเอกสาร, ลิงก์ SharePoint URL ที่ผ่านการตรวจสอบ HTTPS และปุ่มดำเนินการต่อ
 
 #### 7. Quick Add Modal เพิ่มประเภทเอกสารด่วน (Quick Add Modal)
 - **ภาพหน้าจอ:**  
-  ![05c_quick_add_modal.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/05c_quick_add_modal.png)
+  ![05c_quick_add_modal.png](./docs/images/edr_memo/05c_quick_add_modal.png)
 - **ฟังก์ชันการทำงาน:** ป๊อปอัปเพิ่มประเภทเอกสารใหม่อย่างรวดเร็ว มีระบบตรวจจับชื่อซ้ำและ Soft Warning กรณีชื่อใกล้เคียง $\ge 80\%$
 
 #### 8. หน้ายืนยันข้อมูลก่อนออกเลข (Confirmation Step)
 - **ภาพหน้าจอ:**  
-  ![19_create_confirmation.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/19_create_confirmation.png)
+  ![19_create_confirmation.png](./docs/images/edr_memo/19_create_confirmation.png)
 - **ฟังก์ชันการทำงาน:** หน้าต่างทบทวนข้อมูลก่อนยืนยัน เพื่อป้องกันการขอเลขผิดพลาด เมื่อกดยืนยันระบบจะออกเลขทันที (Instant Issuance)
 
 #### 9. หน้ารายละเอียดคำขอเลขที่เอกสารภายใน (Internal Request Detail)
 - **ภาพหน้าจอ:**  
-  ![04_internal_request_detail.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/04_internal_request_detail.png)
-  *(มุมมองเต็ม: [09_internal_request_detail.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/09_internal_request_detail.png))*
+  ![04_internal_request_detail.png](./docs/images/edr_memo/04_internal_request_detail.png)  
+  *(มุมมองเต็ม: [09_internal_request_detail.png](./docs/images/edr_memo/09_internal_request_detail.png))*
 - **ฟังก์ชันการทำงาน:** แสดงรายละเอียดเลขที่เอกสารที่ได้รับ, วันเวลาที่ออกเลข, ข้อมูลผู้ขอ, ลิงก์ SharePoint พร้อมปุ่มแก้ไข URL และปุ่มปิดเลขเอกสาร
 
 #### 10. Modal ปิดเลขเอกสารบันทึกภายใน (Close Document Modal)
 - **ภาพหน้าจอ:**  
-  ![18_modal_close_document.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/18_modal_close_document.png)
+  ![18_modal_close_document.png](./docs/images/edr_memo/18_modal_close_document.png)
 - **ฟังก์ชันการทำงาน:** ป๊อปอัปยืนยันการปิดเลขเอกสาร บังคับกรอกเหตุผลการปิดเลข เพื่อเปลี่ยนสถานะเป็น `Closed`
 
 #### 11. หน้าจอค้นหาเอกสาร Search Screen (Search Page)
 - **ภาพหน้าจอ:**  
-  ![06_search_page.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/06_search_page.png)
-  *(มุมมองตัวกรอง: [10_search_page.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/10_search_page.png))*
+  ![06_search_page.png](./docs/images/edr_memo/06_search_page.png)  
+  *(มุมมองตัวกรอง: [10_search_page.png](./docs/images/edr_memo/10_search_page.png))*
 - **ฟังก์ชันการทำงาน:** ค้นหาเอกสารขั้นสูง กรองตามสายงาน ฝ่าย หน่วยงานย่อย ช่วงวันที่ และคำสำคัญ
 
 #### 12. หน้าจอออกรายงาน Report Screen (Report Page)
 - **ภาพหน้าจอ:**  
-  ![07_report_page.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/07_report_page.png)
-  *(มุมมองตัวเลือกรายงาน: [11_report_page.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/11_report_page.png))*
+  ![07_report_page.png](./docs/images/edr_memo/07_report_page.png)  
+  *(มุมมองตัวเลือกรายงาน: [11_report_page.png](./docs/images/edr_memo/11_report_page.png))*
 - **ฟังก์ชันการทำงาน:** สรุปรายงานการออกเลขบันทึกภายในประจำเดือน/ปี และส่งออกไฟล์ Excel
 
 #### 13. หน้าจอจัดการ Master สายงาน (Settings Lines)
 - **ภาพหน้าจอ:**  
-  ![07_settings_lines.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/07_settings_lines.png)
-  *(มุมมองรายการ: [09_settings_lines.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/09_settings_lines.png) / [07_master_lines_list.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/07_master_lines_list.png))*
+  ![07_settings_lines.png](./docs/images/edr_memo/07_settings_lines.png)  
+  *(มุมมองรายการ: [09_settings_lines.png](./docs/images/edr_memo/09_settings_lines.png) / [07_master_lines_list.png](./docs/images/edr_memo/07_master_lines_list.png))*
 - **ฟังก์ชันการทำงาน:** จัดการข้อมูลสายงาน (Line) เพิ่ม แก้ไข ระงับการใช้งานสายงาน
 
 #### 14. หน้าจอจัดการ Master หน่วยงานภายใน (Settings Units)
 - **ภาพหน้าจอ:**  
-  ![08_settings_units.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/08_settings_units.png)
-  *(มุมมองผูกฝ่าย: [10_settings_units.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/10_settings_units.png))*
+  ![08_settings_units.png](./docs/images/edr_memo/08_settings_units.png)  
+  *(มุมมองผูกฝ่าย: [10_settings_units.png](./docs/images/edr_memo/10_settings_units.png))*
 - **ฟังก์ชันการทำงาน:** จัดการหน่วยงานย่อย/ทีมภายในฝ่าย กำหนดตัวย่อทีมสำหรับใช้ในการ Running เลข
 
 #### 15. หน้าจอผูกฝ่ายกับสายงาน (Settings Departments)
 - **ภาพหน้าจอ:**  
-  ![11_settings_departments.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/11_settings_departments.png)
+  ![11_settings_departments.png](./docs/images/edr_memo/11_settings_departments.png)
 - **ฟังก์ชันการทำงาน:** จับคู่ฝ่าย (Department) ให้อยู่ภายใต้สายงาน (Line) เพื่อรองรับ Hierarchy 3 ระดับ
 
 #### 16. หน้าจอจัดการตัวย่อฝ่ายและ Running Config (Settings Department Codes)
 - **ภาพหน้าจอ:**  
-  ![12_settings_department_codes.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/12_settings_department_codes.png)
+  ![12_settings_department_codes.png](./docs/images/edr_memo/12_settings_department_codes.png)
 - **ฟังก์ชันการทำงาน:** กำหนดรหัสตัวย่อฝ่ายภาษาไทยและภาษาอังกฤษ เช่น `ฝสบ.` / `CAD` สำหรับขึ้นต้นเลขที่เอกสาร
 
 #### 17. หน้าจอรูปแบบเลขเอกสารภายใน (Settings Internal Number Formats)
 - **ภาพหน้าจอ:**  
-  ![06_settings_internal_number_formats.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/06_settings_internal_number_formats.png)
-  *(มุมมองเต็ม: [13_settings_internal_number_formats.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/13_settings_internal_number_formats.png))*
+  ![06_settings_internal_number_formats.png](./docs/images/edr_memo/06_settings_internal_number_formats.png)  
+  *(มุมมองเต็ม: [13_settings_internal_number_formats.png](./docs/images/edr_memo/13_settings_internal_number_formats.png))*
 - **ฟังก์ชันการทำงาน:** กำหนด Scope การ Running เลข (ระดับ LINE / DEPT / UNIT) และรูปแบบ Pattern
 
 #### 18. Modal แก้ไขรูปแบบเลขเอกสารภายใน (Edit Internal Number Format Modal)
 - **ภาพหน้าจอ:**  
-  ![17_modal_edit_internal_number_format.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/17_modal_edit_internal_number_format.png)
+  ![17_modal_edit_internal_number_format.png](./docs/images/edr_memo/17_modal_edit_internal_number_format.png)
 - **ฟังก์ชันการทำงาน:** ป๊อปอัปปรับแต่งตัวแปร Pattern (เช่น `{DEPT_CODE}.{YEAR_TH}-{SEQ:6}`)
 
 #### 19. หน้าจอจัดการ Master ประเภทเอกสาร (Settings Doc Types)
 - **ภาพหน้าจอ:**  
-  ![05_settings_internal_doc_types.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/05_settings_internal_doc_types.png)
-  *(มุมมองรายการ: [08_settings_doc_types.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/08_settings_doc_types.png) / Modal เพิ่มประเภท: [16_modal_create_doc_type.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/16_modal_create_doc_type.png) / Modal สายงาน: [14_modal_create_line.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/14_modal_create_line.png) / Modal หน่วยงาน: [15_modal_create_unit.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/edr_memo/15_modal_create_unit.png))*
+  ![05_settings_internal_doc_types.png](./docs/images/edr_memo/05_settings_internal_doc_types.png)  
+  *(มุมมองรายการ: [08_settings_doc_types.png](./docs/images/edr_memo/08_settings_doc_types.png) / Modal เพิ่มประเภท: [16_modal_create_doc_type.png](./docs/images/edr_memo/16_modal_create_doc_type.png) / Modal สายงาน: [14_modal_create_line.png](./docs/images/edr_memo/14_modal_create_line.png) / Modal หน่วยงาน: [15_modal_create_unit.png](./docs/images/edr_memo/15_modal_create_unit.png))*
 - **ฟังก์ชันการทำงาน:** จัดการประเภทเอกสารบันทึกภายใน และอนุมัติรายการ Quick Add จากผู้ใช้
 
 ---
@@ -951,87 +951,87 @@ $$\text{Progress \%} = \left( \frac{\sum_{i=1}^{N} \text{Weight}(\text{SubAssign
 
 #### 1. หน้าจอเข้าสู่ระบบสารบรรณ (Correspondence Login & Demo Switcher)
 - **ภาพหน้าจอ:**  
-  ![01_login_page.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/correspondence/01_login_page.png)
+  ![01_login_page.png](./docs/images/correspondence/01_login_page.png)
 - **ฟังก์ชันการทำงาน:** ล็อกอินผ่าน LDAP และมี Demo Switcher จำลองบทบาทผู้ใช้ 7 บทบาท สำหรับทดสอบ SIT/UAT
 
 #### 2. หน้าจอ Dashboard ติดตามงานสารบรรณ (Correspondence Dashboard)
 - **ภาพหน้าจอ:**  
-  ![02_dashboard_overview.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/correspondence/02_dashboard_overview.png)
+  ![02_dashboard_overview.png](./docs/images/correspondence/02_dashboard_overview.png)
 - **ฟังก์ชันการทำงาน:** สรุป Metrics งานรับเข้า-ส่งออก, งานค้างตามสถานะ, งานใกล้ถึงกำหนด (Due Soon), งานเกินกำหนด (Overdue), และกราฟแนวโน้ม
 
 #### 3. หน้ารายการเอกสารรับเข้า (Incoming Documents List)
 - **ภาพหน้าจอ:**  
-  ![03_incoming_document_list.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/correspondence/03_incoming_document_list.png)
+  ![03_incoming_document_list.png](./docs/images/correspondence/03_incoming_document_list.png)
 - **ฟังก์ชันการทำงาน:** ตารางรายการเอกสารรับเข้า ตัวกรองสถานะทั้ง 5 ขั้นตอน แถบแสดง Progress Bar % และปุ่มทางลัดไปยังหน้ารายละเอียด
 
 #### 4. หน้ารายการเอกสารส่งออก (Outgoing Documents List)
 - **ภาพหน้าจอ:**  
-  ![04_outgoing_document_list.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/correspondence/04_outgoing_document_list.png)
+  ![04_outgoing_document_list.png](./docs/images/correspondence/04_outgoing_document_list.png)
 - **ฟังก์ชันการทำงาน:** ตารางเอกสารส่งออก แสดงเลขคู่ขนาน Dual Running Numbers (ไทย/อังกฤษ), หน่วยงานปลายทาง, สถานะการนำส่ง (Sent/Delivered)
 
 #### 5. หน้าจอลงทะเบียนเอกสารรับเข้า (Register Incoming Document Form)
 - **ภาพหน้าจอ:**  
-  ![05_register_incoming_form.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/correspondence/05_register_incoming_form.png)
+  ![05_register_incoming_form.png](./docs/images/correspondence/05_register_incoming_form.png)
 - **ฟังก์ชันการทำงาน:** ฟอร์มลงทะเบียนรับเข้า เลือกระดับความลับ (ปกติ/ลับ/ลับมาก), ระบุ Deadline, แนบไฟล์ หรือเปิดกล้องถ่ายภาพ
 
 #### 6. หน้าจอสร้างคำขอออกเลขเอกสารส่งออก (Register Outgoing Document Form)
 - **ภาพหน้าจอ:**  
-  ![06_register_outgoing_form.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/correspondence/06_register_outgoing_form.png)
+  ![06_register_outgoing_form.png](./docs/images/correspondence/06_register_outgoing_form.png)
 - **ฟังก์ชันการทำงาน:** ฟอร์มขอเลขส่งออก UI 2 คอลัมน์ เลือกระบบออกเลข (Flow A ทันที หรือ Flow B รออนุมัติ), เลือกวิธีนำส่ง และบังคับแนบไฟล์
 
 #### 7. หน้ารายละเอียดเอกสาร Story Line & SubTree (Document Detail Storyline)
 - **ภาพหน้าจอ:**  
-  ![07_document_detail_storyline.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/correspondence/07_document_detail_storyline.png)
+  ![07_document_detail_storyline.png](./docs/images/correspondence/07_document_detail_storyline.png)
 - **ฟังก์ชันการทำงาน:** แสดง Timeline การดำเนินงาน (Story Line), ลำดับชั้นการมอบหมายงานย่อย (Nested Delegation SubTree) และสถานะของแต่ละฝ่าย
 
 #### 8. หน้ารายละเอียดเอกสาร Chain of Custody (Document Detail Custody)
 - **ภาพหน้าจอ:**  
-  ![08_document_detail_custody.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/correspondence/08_document_detail_custody.png)
+  ![08_document_detail_custody.png](./docs/images/correspondence/08_document_detail_custody.png)
 - **ฟังก์ชันการทำงาน:** แสดงประวัติผู้ถือครองเอกสารฉบับจริง (Stateful Chain of Custody) ลำดับการเปลี่ยนมือ วันเวลา และผู้ถือครองปัจจุบัน
 
 #### 9. การ์ดไฟล์แนบและการอัปโหลด Drag-and-Drop (Attachments Card)
 - **ภาพหน้าจอ:**  
-  ![09_document_detail_attachments.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/correspondence/09_document_detail_attachments.png)
+  ![09_document_detail_attachments.png](./docs/images/correspondence/09_document_detail_attachments.png)
 - **ฟังก์ชันการทำงาน:** อัปโหลดไฟล์แบบ Drag-and-Drop รองรับไฟล์ขนาดไม่เกิน 25 MB พร้อม Lightbox พรีวิวภาพถ่ายและไฟล์ PDF
 
 #### 10. Modal ถ่ายภาพด้วยกล้อง WebRTC (WebRTC Camera Modal)
 - **ภาพหน้าจอ:**  
-  ![10_modal_camera_capture.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/correspondence/10_modal_camera_capture.png)
+  ![10_modal_camera_capture.png](./docs/images/correspondence/10_modal_camera_capture.png)
 - **ฟังก์ชันการทำงาน:** หน้าต่างถ่ายภาพเอกสารสดผ่านกล้อง มีกรอบสีทอง Viewfinder `#FFCD00`, ปุ่ม Mirror กลับภาพ, และปุ่มหมุนภาพ 90 องศา
 
 #### 11. Modal ยืนยันตัวตนด้วยรหัส OTP (Top Secret OTP Modal)
 - **ภาพหน้าจอ:**  
-  ![11_modal_otp_verification.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/correspondence/11_modal_otp_verification.png)
+  ![11_modal_otp_verification.png](./docs/images/correspondence/11_modal_otp_verification.png)
 - **ฟังก์ชันการทำงาน:** ป๊อปอัปยืนยัน OTP 6 หลักทางอีเมล สำหรับปลดล็อกไฟล์แนบเอกสาร "ลับมาก" พร้อมแสดงนับถอยหลัง 15 นาที
 
 #### 12. หน้ารายละเอียดเอกสาร Audit Log Trail (Document Detail Audit)
 - **ภาพหน้าจอ:**  
-  ![12_document_detail_audit.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/correspondence/12_document_detail_audit.png)
+  ![12_document_detail_audit.png](./docs/images/correspondence/12_document_detail_audit.png)
 - **ฟังก์ชันการทำงาน:** บันทึกประวัติการกระทำสำคัญทุกขั้นตอน วันเวลา ชื่อผู้กระทำ IP Address และรายละเอียดการเปลี่ยนแปลงย้อนหลัง 10 ปี
 
 #### 13. หน้าจอกล่องงานส่วนตัว (Personal Task Inbox)
 - **ภาพหน้าจอ:**  
-  ![13_task_inbox.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/correspondence/13_task_inbox.png)
+  ![13_task_inbox.png](./docs/images/correspondence/13_task_inbox.png)
 - **ฟังก์ชันการทำงาน:** กล่องงานส่วนตัวของผู้ใช้ แบ่งเป็น 5 หมวด: งานรอดำเนินการ, งานส่งต่อ, งานติดตาม, งานเสร็จสิ้น, และงานฉบับร่าง
 
 #### 14. หน้าจอจัดการผู้ใช้และการ Provisioning จาก LDAP (User Provisioning)
 - **ภาพหน้าจอ:**  
-  ![14_admin_user_provisioning.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/correspondence/14_admin_user_provisioning.png)
+  ![14_admin_user_provisioning.png](./docs/images/correspondence/14_admin_user_provisioning.png)
 - **ฟังก์ชันการทำงาน:** Admin ค้นหาบัญชีพนักงานจาก Active Directory และกด "Provision" เพิ่มเข้าสู่ระบบ กำหนด Role และเปิด/ปิดการใช้งาน
 
 #### 15. หน้าจอตั้งค่าผู้เฝ้าติดตาม Scope (Monitor Config)
 - **ภาพหน้าจอ:**  
-  ![15_admin_monitor_config.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/correspondence/15_admin_monitor_config.png)
+  ![15_admin_monitor_config.png](./docs/images/correspondence/15_admin_monitor_config.png)
 - **ฟังก์ชันการทำงาน:** มอบหมายผู้เฝ้าติดตาม (Monitor Watcher) ระบุ Scope ฝ่าย สายงาน หรือทั้งองค์กร สำหรับดูงานค้างและ Follow up
 
 #### 16. หน้าจอกำหนดรอบการเตือนซ้ำ (Reminder Intervals Config)
 - **ภาพหน้าจอ:**  
-  ![16_admin_reminder_intervals.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/correspondence/16_admin_reminder_intervals.png)
+  ![16_admin_reminder_intervals.png](./docs/images/correspondence/16_admin_reminder_intervals.png)
 - **ฟังก์ชันการทำงาน:** กำหนดรอบเวลาส่ง Reminder อัตโนมัติ (เช่น ทุก 1 วัน, ทุก 3 วัน) แยกตามความเร่งด่วน ด่วนที่สุด/ด่วนมาก/ด่วน
 
 #### 17. หน้าจอออกรายงานสารบรรณ (Reports Management RPT-01..06)
 - **ภาพหน้าจอ:**  
-  ![17_reports_management.png](file:///Users/nineteen/Project_dev/DVS_Correspondence_system/docs/images/correspondence/17_reports_management.png)
+  ![17_reports_management.png](./docs/images/correspondence/17_reports_management.png)
 - **ฟังก์ชันการทำงาน:** ระบบรายงานมาตรฐาน 6 ประเภท พร้อมตารางสถิติและปุ่มส่งออก Excel/CSV
 
 ---

@@ -51,3 +51,11 @@
 **Context**: Inception Phase - Roles & Permissions Decoupling & Clarity Enhancement
 
 ---
+
+## Markdown Preview Image Path Resolution
+**Timestamp**: 2026-09-05T21:18:30+07:00
+**User Input**: "ภาพไม่แสดงใน preview md"
+**AI Response**: "Diagnosed the root cause of broken image rendering in Markdown Preview: absolute `file:///` URIs were blocked by IDE Webview Content Security Policy (CSP: img-src vscode-webview-resource:). Replaced all 49 image and document asset references across Section 8.1 (19 EDR Memo screens) and Section 8.2 (17 Correspondence screens) with relative paths (`./docs/images/edr_memo/...` and `./docs/images/correspondence/...`). Verified that all 36 screenshots exist on disk and render immediately in local Markdown preview and GitHub web UI."
+**Context**: Quality Assurance & Documentation Display - Markdown Preview Fix
+
+---
