@@ -1,0 +1,17 @@
+**/.git
+**/.gitignore
+**/.vs
+**/.vscode
+**/.agents
+**/.aidlc-rule-details
+**/.kiro
+**/bin
+**/obj
+**/node_modules
+**/dist
+**/App_Data
+aidlc-docs
+antigravity-aidlc-bundle
+Testing
+*.md
+Requiment.txt

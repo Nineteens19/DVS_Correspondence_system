@@ -1,0 +1,15 @@
+Url : https://iwebsvuat.deves.co.th/EDR/Account/Login?ReturnUrl=%2FEDR
+
+ที่เกี่ยข้อง
+manupath : https://iwebsvuat.deves.co.th/EDR/InternalRequest
+
+manupath : https://iwebsvuat.deves.co.th/EDR/Settings/InternalDocumentTypes
+
+manupath : https://iwebsvuat.deves.co.th/EDR/Settings/InternalNumberFormats
+
+manupath : https://iwebsvuat.deves.co.th/EDR/Settings/Lines
+
+manupath : https://iwebsvuat.deves.co.th/EDR/Settings/Units
+
+Username : Teerapat.ti
+Password : P@ssw0rd7

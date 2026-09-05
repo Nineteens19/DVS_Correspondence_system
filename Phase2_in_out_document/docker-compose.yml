@@ -1,0 +1,50 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: deves-correspondence-db
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=${MSSQL_SA_PASSWORD:-YourStrong@Password!2026}
+      - MSSQL_PID=Developer
+    ports:
+      - "${MSSQL_PORT:-1433}:1433"
+    volumes:
+      - mssql_data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P '${MSSQL_SA_PASSWORD:-YourStrong@Password!2026}' -C -Q 'SELECT 1' || /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P '${MSSQL_SA_PASSWORD:-YourStrong@Password!2026}' -Q 'SELECT 1'"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 15s
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: deves-correspondence-app
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - Database__Provider=SqlServer
+      - ConnectionStrings__SqlServer=Server=sqlserver,1433;Database=DevesCorrespondenceDb;User Id=sa;Password=${MSSQL_SA_PASSWORD:-YourStrong@Password!2026};TrustServerCertificate=True;MultipleActiveResultSets=true;Encrypt=False
+      - Storage__BasePath=App_Data/uploads
+    ports:
+      - "${APP_PORT:-8080}:8080"
+    volumes:
+      - app_uploads:/app/App_Data/uploads
+    restart: unless-stopped
+    networks:
+      - app-network
+
+volumes:
+  mssql_data:
+  app_uploads:
+
+networks:
+  app-network:
+    driver: bridge

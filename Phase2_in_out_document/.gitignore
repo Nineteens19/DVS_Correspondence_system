@@ -1,0 +1,27 @@
+# Build and compilation outputs
+bin/
+obj/
+*.db
+*.db-shm
+*.db-wal
+*.log
+
+# Node dependencies and builds
+node_modules/
+dist/
+
+# IDE & OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Temp install scripts
+dotnet-install.ps1
+install_dotnet.ps1
+
+# Mockup & local artifacts
+mockup/
+src/Correspondence.Api/wwwroot/
+.env
+UAT_HANDOVER_*
+

@@ -1,0 +1,11 @@
+{
+  "title": "e-Document Tracking",
+  "description": "e-Document Tracking for Deves Insurance: track incoming and outgoing documents through every assignment stage.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
