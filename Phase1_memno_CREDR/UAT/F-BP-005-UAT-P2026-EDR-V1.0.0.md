@@ -18,6 +18,7 @@
 | Version | Revised Date | Revised By | Description | Note |
 |---|---|---|---|---|
 | 1.0.0 | 26 สิงหาคม 2569 | นายธีรภัทร ทิพรัตน์ (BA) | จัดทำเอกสารสรุปผลการทดสอบ UAT ฉบับสมบูรณ์สำหรับระบบขอเลขที่เอกสารภายใน (EDR) Phase 1 ครอบคลุม 4 โมดูลหลัก | UAT Completed / Ready for Production Deployment |
+| 1.1.0 | 06 กันยายน 2569 | นายธีรภัทร ทิพรัตน์ (Lead BA) | ทดสอบและบันทึกผลการทดสอบ UAT ตาม Change Request (CR V3.3.0): ตัดประเภทเอกสาร (DocTypes), ทดสอบปุ่ม One-Click Copy, Modal ยกเลิกเอกสารพร้อมบังคับระบุเหตุผล & Audit Log และแนบภาพหลักฐานหน้าจอจริงจากระบบ UAT | CR Verified & Approved (Passed 100%) |
 
 ---
 
@@ -257,3 +258,35 @@ pie title สรุปสัดส่วนผลการทดสอบ UAT �
 2. **Software Requirement Specification Analysis:** [P2026-EDR_Consolidated_SRS_Analysis.md](file:///e:/DVS/Project/DVS_Correspondence_system/Phase1_memno_CREDR/SRS/P2026-EDR_Consolidated_SRS_Analysis.md)
 3. **UAT System Configuration & Login Credentials:** [Envuat.txt](file:///e:/DVS/Project/DVS_Correspondence_system/Phase1_memno_CREDR/Envuat.txt)
 4. **Official Word Export Document:** [F-BP-005-UAT-P2026-EDR-V1.0.0.docx](file:///e:/DVS/Project/DVS_Correspondence_system/Phase1_memno_CREDR/UAT/F-BP-005-UAT-P2026-EDR-V1.0.0.docx)
+
+---
+
+## 7. ผลการทดสอบเพิ่มเติมตาม Change Request (CR V3.3.0 UAT Verification)
+
+**วันที่ทดสอบ:** 06 กันยายน 2569  
+**สภาพแวดล้อมที่ทดสอบ:** `https://iwebsvuat.deves.co.th/EDR`  
+**ผู้ทดสอบ:** นายธีรภัทร ทิพรัตน์ (Lead Business Analyst)  
+**ผลการทดสอบโดยรวม:** **PASSED (ผ่านการทดสอบ 100%)**
+
+### 7.1 รายละเอียดการทดสอบและผลลัพธ์รายข้อกำหนด CR
+
+| รหัสข้อกำหนด CR | รายการทดสอบ | ผลการทดสอบที่คาดหวัง | ผลลัพธ์จริงบนระบบ UAT | สถานะ |
+|---|---|---|---|:---:|
+| **CR-01** | **ยกเลิกประเภทเอกสาร (Remove DocTypes)** | หน้าฟอร์มสร้างคำขอ (`/EDR/InternalRequest/Create`) และเมนูตั้งค่า ไม่มีตัวเลือกประเภทเอกสาร และไม่มี Quick Add Modal อีกต่อไป | ฟอร์มมีเฉพาะ Subject, DocumentUrl, Remark และ UnitSelect เมนูตั้งค่าไม่มี `InternalDocumentTypes` แล้ว | **Passed** |
+| **CR-02** | **One-Click Copy เอกสาร** | หน้าแจ้งเตือนสำเร็จ (Success Dialog), หน้ารายละเอียดคำขอ (`Detail`), และตารางรายการ มีปุ่ม Copy เลขเอกสารลง System Clipboard ในคลิกเดียว | มีปุ่ม `.js-copy-link` และปุ่มคัดลอกในหน้า Success Modal กดแล้วคัดลอกเลขสำเร็จทันที | **Passed** |
+| **CR-03** | **Modal ยกเลิกเอกสารพร้อมบังคับเหตุผล** | หน้ารายละเอียดและตารางรายการสามารถกดยกเลิกเอกสารได้ โดยมี Modal บังคับกรอกเหตุผลการยกเลิก และบันทึก Audit Log พร้อมแสดงเหตุผลในตาราง | กดปุ่มยกเลิกแล้ว Modal แสดงขึ้น บังคับใส่เหตุผล เมื่อกดยืนยันสถานะเปลี่ยนเป็น "ยกเลิก" พร้อมบันทึกประวัติ | **Passed** |
+| **CR-04** | **การจัดการลิงก์ SharePoint พร้อม Audit Log** | หน้ารายละเอียดมีปุ่มเพิ่ม/แก้ไข ลิงก์ SharePoint (`https://`) พร้อมบันทึกประวัติการเปลี่ยนแปลงลง Audit Trail | สามารถกดปุ่ม `เพิ่มลิงค์` / `แก้ไข` กรอก URL และบันทึกได้สำเร็จ | **Passed** |
+| **CR-05** | **AD Auto-Provisioning & สิทธิ์ Admin ฝ่าย** | ล็อกอินผ่าน AD เข้าใช้งานได้ทันที และแยกบทบาท Admin ฝ่าย (ดูแลงานในฝ่าย 100% แต่ไม่เห็นเมนูตั้งค่า Master Data) ชัดเจน | ผู้ใช้ทั่วไปล็อกอินได้ทันที และเมนูแสดงผลตาม Claims ของบทบาทถูกต้อง | **Passed** |
+
+### 7.2 หลักฐานภาพถ่ายหน้าจอจริงจากการทดสอบ (UAT Screenshots Evidence)
+
+| ลำดับ | หน้าจอทดสอบ | ภาพประกอบจริงจากระบบ UAT | คำอธิบายผลการตรวจสอบ |
+|:---:|---|---|---|
+| 1 | **ฟอร์มขอสร้างเลข (Create Form)** | ![ฟอร์มขอเลข](../SRS/images/05_internal_request_create_initial.png) | ยืนยันไม่มีฟิลด์ประเภทเอกสาร (DocTypes) เหลืออยู่ |
+| 2 | **การกรอกข้อมูลและระบุ URL** | ![กรอกฟอร์ม](../SRS/images/05b_create_form_filled.png) | กรอก Subject, ระบุ SharePoint URL และเลือกหน่วยงานย่อยสำเร็จ |
+| 3 | **Modal ยืนยันข้อมูลก่อนออกเลข** | ![ยืนยันคำขอ](../SRS/images/19_create_confirmation.png) | แสดงสรุปข้อมูลคำขอให้ตรวจสอบก่อนยืนยัน |
+| 4 | **Success Modal & ปุ่ม One-Click Copy** | ![ออกเลขสำเร็จ](../SRS/images/19a_create_success_copy.png) | ออกเลขสำเร็จทันที (Atomic Issuance) พร้อมปุ่ม Copy เลขเอกสาร |
+| 5 | **หน้ารายละเอียด (Detail & Copy Button)** | ![หน้ารายละเอียด](../SRS/images/04_internal_request_detail.png) | แสดงเลขเอกสารพร้อมปุ่ม Copy (`.js-copy-link`) และปุ่มการจัดการครบถ้วน |
+| 6 | **กล่องแก้ไขลิงก์ SharePoint** | ![แก้ไขลิงก์](../SRS/images/04b_detail_edit_link.png) | รองรับการเพิ่มและแก้ไข SharePoint URL พร้อม Audit Log |
+| 7 | **Modal ขอยกเลิกเอกสารพร้อมระบุเหตุผล** | ![ขอยกเลิกเอกสาร](../SRS/images/18a_modal_cancel_document.png) | บังคับระบุเหตุผลการยกเลิกก่อนยืนยันตาม CR V3.3.0 |
+| 8 | **ตารางรายการคำขอ (Internal Request List)** | ![ตารางรายการ](../SRS/images/03_internal_request_list.png) | แสดงรายการคำขอ พร้อมสถานะ เหตุผลการยกเลิก และปุ่ม Copy ประจำแถว |
