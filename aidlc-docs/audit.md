@@ -59,3 +59,11 @@
 **Context**: Quality Assurance & Documentation Display - Markdown Preview Fix
 
 ---
+
+## EDR Memo Requirements Enhancement (V3.3.0)
+**Timestamp**: 2026-09-06T09:12:00+07:00
+**User Input**: "ระบบ EDR ให้เพิ่ม แยกสิทธิ์ Admin ฝ่าย เช่น SuperAdmin คือ adminของเดิมทำได้ทั้งหมด และแต่เพิ่ม Admin ฝ่ายมาเพื่อเพื่อให้เห็นทุกงงานในฝ่ายตนเองยกเว้นตั้งค่าระบบ ผู้ใช้งานทั่วไป ไม่ต้อง set สิทธิ์ สามารถเข้าระบบได้เลยระบบเพิ่มอัตโนมัติโดยเข้าใช้งานผ่าน AD ประเภทเอกสารของเอกสารบันทึกภายใน เอาออกทั้งหมดไม่มีแล้ว เก็บ log เพิ่มเรื่องยกเลิก/เพิ่ม link เอกสาร เพิ่มปุ่ม copy เลข เอกสารบันทึก"
+**AI Response**: "Successfully updated P2026-DVS_Correspondence_System_Consolidated_SRS_Analysis.md to V3.3.0 covering 5 core enhancements: 1) Role Separation (EDR-R02 Department Admin has full departmental scope but strict HTTP 403 / hidden menu for System Settings/Master Data vs EDR-R03 SuperAdmin having full system-wide access); 2) Active Directory Auto-Provisioning (General users logging in via AD are auto-provisioned with EDR-R01 General User without manual setup); 3) Complete Removal of Internal Memo Document Types (eliminated DocType dropdown, Quick Add modal, and Master DocTypes); 4) Audit Logging for Cancel Document (mandatory reason >= 10 chars) and Document Link management (add/update/remove links); 5) One-Click Copy Document Number (added quick-copy buttons with toast feedback on Success Dialog, Request Detail Header, and List Tables). Synchronized Sections 1, 2, 3, 4, 5, 8, 10, 11, 12, 17, and 19 while strictly preserving Deves BA standards and relative image links."
+**Context**: Requirements Engineering - Business Logic & Security Governance Refinement (V3.3.0)
+
+---
